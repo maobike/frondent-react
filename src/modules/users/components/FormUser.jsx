@@ -9,7 +9,7 @@ import CategoryService from '../../../modules/categories/services/CategoryServic
 import Swal from 'sweetalert2';
 
 export function FormUser(props) {
-    const { register, handleSubmit, setValue, resetField, formState: { errors } } = useForm();
+    const { register, handleSubmit, setValue, setError, formState: { errors } } = useForm();
     const { toggle, user, refreshList } = props;
     const [title, setTitle] = useState(null);
     const [categories, setCategories] = useState(null);
@@ -65,7 +65,7 @@ export function FormUser(props) {
                         confirmButtonText: "Aceptar",
                     });
                 } else {
-                    swal.fire({
+                    Swal.fire({
                         title: "Transacción errónea",
                         text: result.data,
                         icon: "error",
