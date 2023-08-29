@@ -20,19 +20,23 @@ export const ListUsers = () => {
     };
 
     useEffect(() => {
-        const getUsers = async () => {
-            try {
-                // Llamamos el servicio
-                const result = await UserService.getUsers();
-                // Asignamos el valor del resultado
-                setDataUser(result.data.users);
-                setDataUserFilter(result.data.users);
-            } catch (error) {
-                console.log(error);
-            }
-        };
         getUsers();
     }, [refresh]);
+
+    const getUsers = async () => {
+        try {
+            // Llamamos el servicio
+            const result = await UserService.getUsers();
+            
+            // Asignamos el valor del resultado
+            setDataUser(result.data.users);
+            setDataUserFilter(result.data.users);
+    
+            return result;
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
     // Búsqueda por correo, nombre, apellido o país
     const handleInputChange = (input) => {

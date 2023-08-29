@@ -1,6 +1,6 @@
 import { axiosInstance, axiosInstanceExtern } from "./../../../api/AxiosConfig";
 
-class UserService {
+class UserServiceClass {
 
     /**
      * @returns un empleado
@@ -49,4 +49,6 @@ class UserService {
 
 }
 
-export default new UserService();
+const UserService = new UserServiceClass();
+
+export default UserService;

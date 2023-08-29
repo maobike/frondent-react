@@ -19,7 +19,7 @@ function NavBar() {
     return (
         <>
             <Navbar color="dark" dark={true} expand="md">
-                <NavbarBrand className='text-warning'>Test Corserva</NavbarBrand>
+                <NavbarBrand className='text-warning' data-testid='titleApp'>Test Corserva</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto" navbar>

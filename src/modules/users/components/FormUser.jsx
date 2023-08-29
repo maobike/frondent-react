@@ -5,14 +5,12 @@ import '../../../assets/font-awesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import UserService from '../services/UserService'
-import CategoryService from '../../../modules/categories/services/CategoryService'
 import Swal from 'sweetalert2';
 
 export function FormUser(props) {
     const { register, handleSubmit, setValue, setError, formState: { errors } } = useForm();
     const { toggle, user, refreshList } = props;
     const [title, setTitle] = useState(null);
-    const [categories, setCategories] = useState(null);
 
     // Función para saber si viene a crear o editar el cliente
     useEffect(() => {
@@ -33,7 +31,7 @@ export function FormUser(props) {
         };
 
         getTitle();
-    }, []);
+    }, [setValue, user]);
 
     // Función para enviar a guardar
     const onSubmit = async (data) => {
@@ -116,7 +114,7 @@ export function FormUser(props) {
 
     return (
         <Fragment>
-            <ModalHeader toggle={toggle}>{title}</ModalHeader>
+            <ModalHeader toggle={toggle}><span data-testid="titleApp">{title}</span></ModalHeader>
             <ModalBody>
                 <form name="form-list" id="form-list">
                     <Row>
@@ -201,9 +199,6 @@ export function FormUser(props) {
                                     <option value="true">Activo</option>
                                     <option value="false">Inactivo</option>
                                 </select>
-                                <div className="text-error">
-                                    {errors.category_id?.type === "required" && "La categoría es requerida"}
-                                </div>
                             </FormGroup>
                         </Col>
                     </Row>

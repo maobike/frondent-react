@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListUsers Component This should render correctly 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-md-12"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="col-md-12"
+            >
+              <table
+                class="table"
+              >
+                <tbody>
+                  <tr>
+                    <td>
+                      <form>
+                        <div
+                          class="row"
+                        >
+                          <div
+                            class="col-md-4"
+                          >
+                            <div
+                              class="no-border input-group"
+                            >
+                              <input
+                                autocomplete="off"
+                                class="form-control"
+                                name="SearchUser"
+                                placeholder="Buscar..."
+                                type="text"
+                                value=""
+                              />
+                              <span
+                                class="input-group-text"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  class="svg-inline--fa fa-magnifying-glass "
+                                  data-icon="magnifying-glass"
+                                  data-prefix="fas"
+                                  focusable="false"
+                                  role="img"
+                                  viewBox="0 0 512 512"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </span>
+                              <button
+                                class="btn btn-primary"
+                                type="button"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  class="svg-inline--fa fa-plus "
+                                  data-icon="plus"
+                                  data-prefix="fas"
+                                  focusable="false"
+                                  role="img"
+                                  viewBox="0 0 448 512"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                 Nuevo Usuario
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                style="overflow: auto;"
+              >
+                <table
+                  class="borde-tabla table table-bordered table-striped table-hover"
+                >
+                  <thead>
+                    <tr>
+                      <th>
+                        Id
+                      </th>
+                      <th>
+                        Nombre
+                      </th>
+                      <th>
+                        Email
+                      </th>
+                      <th>
+                        Teléfono
+                      </th>
+                      <th>
+                        Estatus
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody />
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div />
+  </div>
+</div>
+`;
